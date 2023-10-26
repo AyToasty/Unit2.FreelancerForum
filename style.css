@@ -1,0 +1,22 @@
+body {
+  text-align: center;
+}
+
+#freelancer-list {
+  display: inline-block; 
+  text-align: left; 
+  margin: 0 auto; 
+}
+
+#average-price {
+  margin-top: 20px;
+}
+
+.freelancer {
+  border: 2px solid #5c0177;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin: 10px;
+  text-align: left;
+}
