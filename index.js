@@ -1,7 +1,10 @@
-let freelancers = [];
+let freelancers = [  
+  { name: "Alice", occupation: "Writer", price: 30 },
+  { name: "Bob", occupation: "Teacher", price: 50 }
+];
 
 function updateFreelancerList() {
-  let freelancerList = document.getElementById('freelancer-list');
+  let freelancerList = document.querySelector('#freelancer-list');
   freelancerList.innerHTML = '';
 
   for (let i = 0; i < freelancers.length; i++) {
@@ -22,7 +25,7 @@ function updateAveragePrice() {
   let totalPrices = freelancers.reduce((total, f) => total + f.price, 0);
   let averagePrice = totalPrices / freelancers.length;
 
-  let averagePriceElement = document.getElementById('average-price');
+  let averagePriceElement = document.querySelector('#average-price');
   averagePriceElement.textContent = `Average Price: $${averagePrice.toFixed(2)}`;
 }
 
